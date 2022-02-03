@@ -1,8 +1,9 @@
-import { Button } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
  import styles from '../styles/Home.module.css'
+ import { palette } from '@mui/system';
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Streamer Match!</a>
-        </h1>
+        <Typography variant='h1'>
+          Welcome to <a href="https://nextjs.org"><span style={{color: 'secondary.main' }}>Streamer</span> Match!</a>
+        </Typography>
 
         <Button className={styles.button} size='large' variant="contained">Get Started</Button>
 
